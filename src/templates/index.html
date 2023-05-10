@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="block-information">
+  <div class="block-information-con">Вовремя.ру - магазин качественных и надёжных наручных часов, большой выбор, популярные бренды.
+    <br>    <br>
+    При покупке пары наручных часов скидка -10%
+    <br>    <br>
+    Бесплатная доставка.
+  </div>
+  <div class="viii">
+  <video width="400" height="320"  autoplay muted id="vid">
+    <source src="{% static 'img/video.mp4' %}" type='video/ogg; codecs="theora, vorbis"'>
+    <source src="{% static 'img/video.mp4' %}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    <source src="{% static 'img/video.mp4' %}" type='video/webm; codecs="vp8, vorbis"'>
+    Тег video не поддерживается вашим браузером.
+   </video>
+  </div>
+</div>
+
+<!-- Слайдер -->
+
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators" id="de">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner" id="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="4000">
+        <img src="{% static 'img/chas1.png' %}" class="d-block w-100" id="w-1001" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="metka">КАЧЕСТВО</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="{% static 'img/chas2.png' %}" class="d-block w-100" id="w-1001" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="metka"> НАДЁЖНОСТЬ</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="{% static 'img/chas3.png' %}" class="d-block w-100"  id="w-1001" alt="..." id="  ">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="metka">ИЗЫСКАНОСТЬ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- БЛОКИ С РАЗНОВИДНОСТЯМИ  -->
+ <div class="block-paralax-1" id="char">Наручные часы - мужские - женские - смарт часы
+  <div class="container-paralax-block-1">
+      <div class="chas-1"><button type="button" class="btn-metka-btn" data-bs-toggle="modal" data-bs-target="#chas-1"></button></div>
+      <div class="chas-2"><button type="button" class="btn-metka-btn" data-bs-toggle="modal" data-bs-target="#chas-2"></button></div>
+      <div class="chas-3"><button type="button" class="btn-metka-btn" data-bs-toggle="modal" data-bs-target="#chas-3"></button></div>
+
+
+    </div>
+    <button id="dee" class="infobutton"  onclick="window.location.href = '{% url "catalog" %}';">Перейти в каталог</button>
+
+ </div>
+
+
+<div class="parallax">
+  <h1>
+    Почему именно мы? <br><br> Наш магазин гарантирует качество товара, а так же гарантию 1 год на все часы. <br><br> Только положительные отзывы о магазине и товаре.
+  </h1>
+  <div class="mask"></div>
+</div>
+
+<!-- Модальное окно часы электронные -->
+<div class="modal fade" id="chas-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">СМАРТ ЧАСЫ В НАЛИЧИИ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{% static 'img/chas-e.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> мужские, Финляндия, процессор Qualcomm Snapdragon, 50WR, стекло: минеральное Gorilla® Glass</p>
+        <br>
+        <img src="{% static 'img/chas-ee.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> мужские, США, кварцевые, 100WR, стекло: сапфировое, D 51мм, толщина 14,9мм, вес 93г</p>
+        <img src="{% static 'img/chas-eee.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> мужские, Китай, процессор HunterSun HS6621, WR, стекло: минеральное, 38x44мм, толщина 10,8мм</p>
+
+
+      </div>
+      <div class="modal-footer" id="mod">
+        <h3>Цена: от 50.000 рублей</h3>
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно часы электронные -->
+<div class="modal fade" id="chas-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">КВАРЦЕВЫЕ ЧАСЫ МУЖСКИЕ В НАЛИЧИИ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{% static 'img/chas-m.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> мужские, США, механические с автоподзаводом, 50WR, стекло: Krysterna, D 43мм, толщина 12,5мм, ширина ремешка 22мм</p>
+        <br>
+        <img src="{% static 'img/chas-mm.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text">мужские, японские, механические с автоподзаводом, 30WR, стекло: минеральное</p>
+        <img src="{% static 'img/chas-mmm.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> мужские, Китай, процессор HunterSun HS6621, WR, стекло: минеральное, 38x44мм, толщина 10,8мм</p>
+
+
+      </div>
+      <div class="modal-footer" id="mod">
+        <h3>Цена: от 50.000 рублей</h3>
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно часы электронные -->
+<div class="modal fade" id="chas-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">КВАРЦЕВЫЕ ЧАСЫ ЖЕНСКИЕ В НАЛИЧИИ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{% static 'img/chas-j.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> женские, Швеция, кварцевые, 30WR, стекло: минеральное, 20x26мм, толщина 6мм, ширина браслета 10мм</p>
+        <br>
+        <img src="{% static 'chas-jj.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> женские, швейцарские, кварцевые, 30WR, стекло: сапфировое, D 32мм</p>
+        <img src="{% static 'img/chas-jjj.png' %}">
+        <p class="modal-text">Характеристики</p>
+        <p class="modal-text"> женские, США, кварцевые, 30WR, стекло: минеральное, D 40мм, толщина 12мм, длина браслета 185мм</p>
+
+
+      </div>
+      <div class="modal-footer" id="mod">
+        <h3>Цена: от 50.000 рублей</h3>
+
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="./Footers · Bootstrap v5.1_files/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="js/javascript.js"></script>
+{% endblock %}

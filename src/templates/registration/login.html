@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Log in/Sign up screen animation</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style_reg.css' %}">
+
+    {% load widget_tweaks %}
+
+</head>
+
+<body style="
+    background: linear-gradient(#4ebbb0, #000000) fixed;
+">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <a class="buty" href="{% url 'index' %}">←</a>
+
+  <div class="container">
+  <div class="frame">
+    <div class="nav">
+      <ul class = "links">
+        <li class="signin-active"><a class="btn">Вход</a></li>
+        <li class="signup-inactive"><a class="btn" href="{% url 'register' %}">Регистрация</a></li>
+      </ul>
+    </div>
+    <div ng-app ng-init="checked = false">
+
+            <form class="form-signin" action="{% url 'login' %}" method="POST" name="form">
+                {% csrf_token %}
+
+          <label for="username">Логин</label>
+          {{ form.username | add_class:"form-styling"  }}
+          <label for="password1">Пароль</label>
+          {{ form.password | add_class:"form-styling" }}
+          <input type="checkbox" id="checkbox"/>
+          <label for="checkbox" ><span class="ui"></span>Остаться на сайте</label>
+            <button class="btn-signup" name="login" type="submit">Войти</button>
+
+            </form>
+
+
+        {% if form.errors %}
+            <p>An error</p>
+        {% endif %}
+
+
+
+
+
+
+  </div>
+</div>
+
+
+</body>
+</html>
+

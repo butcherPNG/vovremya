@@ -1,0 +1,404 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+{% block content %}
+
+  <br><br><br>
+ <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-chargovie-tab" data-bs-toggle="pill" data-bs-target="#pills-chargovie" type="button" role="tab" aria-controls="pills-chargovie" aria-selected="true">Мужские часы</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-shtampovanie-tab" data-bs-toggle="pill" data-bs-target="#pills-shtampovanie" type="button" role="tab" aria-controls="pills-shtampovanie" aria-selected="false">Женские часы</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-stecklo-tab" data-bs-toggle="pill" data-bs-target="#pills-stecklo" type="button" role="tab" aria-controls="pills-stecklo" aria-selected="false">Смарт часы</button>
+  </li>
+</ul>
+
+<!-- модальные -->
+<div class="tab-content" id="pills-tabContent">
+
+  <div class="tab-pane fade show active" id="pills-chargovie" role="tabpanel" aria-labelledby="pills-chargovie-tab">
+
+<!-- KNOP -->
+<div class="block-catalog">
+  <div class="page-wrapper">
+    <div class="page-inner">
+      <div class="roww">
+        <div class="el-wrapper">
+          <div class="box-up">
+            <img class="img" src="{% static 'img/chas-m.png' %}" alt="">
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-name">Casio G-SHOCK GA-900-4AER</span>
+              </div>
+
+            </div>
+          </div>
+  
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+  
+            <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span class="price">55.000</span>
+              <span class="add-to-cart">
+                <span class="txt">Купить</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KNOP -->
+
+  <div class="page-wrapper">
+    <div class="page-inner">
+      <div class="roww">
+        <div class="el-wrapper">
+          <div class="box-up">
+            <img class="img" src="{% static 'img/chas-mm.png' %}" alt="">
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-name">Stuhrling 3917.1</span>
+              </div>
+
+            </div>
+          </div>
+  
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+  
+            <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span class="price">65.000</span>
+              <span class="add-to-cart">
+                <span class="txt">Купить</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- KNOP -->
+
+  <div class="page-wrapper">
+    <div class="page-inner">
+      <div class="roww">
+        <div class="el-wrapper">
+          <div class="box-up">
+            <img class="img" src="{% static 'img/chas-mmm.png' %}" alt="">
+            <div class="img-info">
+              <div class="info-inner">
+                <span class="p-name">Seiko SNK371K1</span>
+              </div>
+
+            </div>
+          </div>
+  
+          <div class="box-down">
+            <div class="h-bg">
+              <div class="h-bg-inner"></div>
+            </div>
+  
+            <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span class="price">65.000</span>
+              <span class="add-to-cart">
+                <span class="txt">Купить</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+</div>
+
+      
+  </div>
+
+  <div class="tab-pane fade" id="pills-shtampovanie" role="tabpanel" aria-labelledby="pills-shtampovanie-tab">
+
+    <div class="block-catalog">
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="roww">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="{% static 'img/chas-j.png' %}" alt="">
+                <div class="img-info">
+                  <div class="info-inner" >
+                    <span class="p-name" id="i">Guess GW0464L4</span>
+
+                  </div>
+
+                </div>
+              </div>
+      
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+      
+                <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="price">45.000</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Купить</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="roww">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="{% static 'img/chas-jj.png' %}" alt="">
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name" id="i">Calvin Klein K7A23646</span>
+  
+                  </div>
+
+                </div>
+              </div>
+      
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+      
+                <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="price">41.000</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Купить</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="roww">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="{% static 'img/chas-jjj.png' %}" alt="">
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name" id="i">Continental 20505-LD556611</span>
+                  </div>
+
+                </div>
+              </div>
+      
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+      
+                <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="price">85.000</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Купить</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="pills-pogonaz" role="tabpanel" aria-labelledby="pills-pogonaz-tab">
+
+    <div id="ddd">ffff</div>
+
+  </div>
+  <div class="tab-pane fade" id="pills-stecklo" role="tabpanel" aria-labelledby="pills-stecklo-tab">
+
+    <div class="block-catalog">
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="roww">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="{% static 'img/chas-e.png' %}" alt="">
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">Guess GW0464L4</span>
+                  </div>
+
+                </div>
+              </div>
+      
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+      
+                <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="price">38.000</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Купить</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="roww">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="{% static 'img/chas-ee.png' %}" alt="">
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">HEAD H160500</span>
+
+                  </div>
+
+                </div>
+              </div>
+      
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+      
+                <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="price">84.000</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Купить</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="roww">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="{% static 'img/chas-eee.png' %}" alt="">
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">Garmin 010-02539-25</span>
+
+                  </div>
+
+                </div>
+              </div>
+      
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+      
+                <a class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <span class="price">38.000</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Купить</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- modalvmodal -->
+
+
+
+<div class="modal fade" id="exampleModal111" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Новое сообщение</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Ваш email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Сообщение:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Отправить сообщение</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Оформить заказ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="POST">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="fullname" class="form-label">ФИО</label>
+            <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Введите ФИО">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Номер телефона</label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Введите номер телефона">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Электронная почта</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Введите email">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Адрес</label>
+            <input type="text" name="address" class="form-control" id="address" placeholder="Введите адрес">
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="./Footers · Bootstrap v5.1_files/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="../js/javascript.js"></script>
+{% endblock %}
